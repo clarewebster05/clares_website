@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ProjectDisplay from './pages/ProjectDisplay'; 
 
 //stuff that we want in all the pages goes in App.js 
 
@@ -16,7 +17,9 @@ function App() {
             <Routes>
                 <Route path = "/" element = {<Home />}> </Route>
                 <Route path = "/projects" element = {<Projects />}> </Route>
+                <Route path = "project/:id" element= {<ProjectDisplay /> }></Route>
                 <Route path = "/experience" element = {<Experience />}> </Route>
+                
             </Routes>
             <Footer />
         </Router>
